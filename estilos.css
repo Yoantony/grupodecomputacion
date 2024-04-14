@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-line;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1{
+    color: red;
+    font-family: Arial, Helvetica, sans-serif;
+    size: 14;
+    margin-top: 10px;
+}
+p{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+body{
+    background-image: url(https://i.pinimg.com/564x/45/2e/c7/452ec7fd510514d035a1d8bc453c3be7.jpg);
+    background-size: cover;
+}
+nav{
+    max-width: 900px;
+    margin: auto;
+    background-color: rgb(138, 109, 55);
+    font-size: 20px;
+    margin-top: 50px;
+}
+.menu-horizontal{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+.menu-horizontal > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none; 
+}
+.menu-horizontal > li:hover{
+background-color: rgb(199, 184, 141);
+}
+.menu-vertical{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width:200px;
+    background-color: rgba(0, 0, 0, .5);
+ }
+.menu-horizontal li:hover .menu-vertical{
+    display: block;
+}
+.menu-vertical li:hover{
+    background-color: lightsalmon;
+}
+.menu-vertical li a{
+  display: block;  
+  color: white;
+  padding: 15px 15px 15px 20px;
+  text-decoration: none;
+}
